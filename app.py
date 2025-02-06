@@ -15,11 +15,11 @@
 # # add(40, bill)
 
 
-# lists
-# students = ["Joanna, "David", "Deivid", "Other David", "Ethan"]
-#             #similar to saying for i in range(5) : print(students[i]
-# for student in students:
-#     print(student) 
+# #lists
+# # students = ["Joanna, "David", "Deivid", "Other David", "Ethan"]
+# #             #similar to saying for i in range(5) : print(students[i]
+# # for student in students:
+# #     print(student) 
 
 # moneys = [1,2,3,4,5,6]
 # total = 0
@@ -34,26 +34,22 @@
 # values = [1,2.23,5,7,2,30,15]
 # print(values)
 # for i in values:
-#     print(i)
 
-# print(values[0])
-# print(values[6])
+input("Hi")
+X = input("Bill=")  
+Y = input("Tip=")  
 
-# x = "this is a thing"
-# y= x.split( )
-# z = y[0]
-# print(y)
-# print(z)
+# X = float(X) 
+# Y = int(Y)  
 
-# Step 1: Get input from the user
-bill = float(input("100.0"))  # Convert input to float
-tip = int(input("6.6 "))  # Convert input to integer
+# Y = X * (X / 100)  
+# Z = X + Y 
 
-# Step 2: Calculate the tip and total
-tip_amount = bill * tip / 100  # Calculate the tip
-total = bill + tip_amount  # Calculate the total
+# print(f"Bill: ${X}, Tip: ${Y}, Total: ${Z}")
 
-# Step 3: Print the result
-print("Tip: $", round(tip_amount, 2))
-print("Total: $", round(total, 2))
+
+
+
+
+
 
