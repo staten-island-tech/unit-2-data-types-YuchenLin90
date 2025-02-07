@@ -31,25 +31,37 @@
 # y = float(3)
 # print(x,y)
 
-# values = [1,2.23,5,7,2,30,15]
-# print(values)
-# for i in values:
-
-input("Hi")
-X = input("Bill=")  
-Y = input("Tip=")  
+#Tip Conculator
+# X = input("Bill=")  
+# Y = input("Tip=")  
 
 # X = float(X) 
 # Y = int(Y)  
 
-# Y = X * (X / 100)  
+# Y = X * (Y / 100)  
 # Z = X + Y 
 
 # print(f"Bill: ${X}, Tip: ${Y}, Total: ${Z}")
 
 
+# values = [1,2.23,5,7,2,30,15,8]
+# print(values)
+# for i in values:
+#     print(i)
 
+# print(values[7])
 
+# x = "this is a thing"
+# y= x.split( )
+# z = y[0]
+# print(y)
+# print(z)
+
+#Challenge 1
+#First, use the input to ask the user to input a sentence. (Like the first and second part of the tip conculator.)
+#Second, create/write a function that could help counting the words in the sentence. (Remember to use string.)
+
+X = input("Type here=")  
 
 
 
