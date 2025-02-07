@@ -60,8 +60,19 @@
 #Challenge 1
 #First, use the input to ask the user to input a sentence. (Like the first and second part of the tip conculator.)
 #Second, create/write a function that could help counting the words in the sentence. (Remember to use string.)
+# x = input("Type here=")     
+# def word_count(x):
+#     y = x.split()
+#     return len(y)
+# y= word_count(x)
+# print(f"Numer of words={y}")
 
-X = input("Type here=")  
+#Quiz next week about 6 statements/datatypes and evaluate them.
 
 
+#Mab Libs Project 
+z = input("It's a __day in the morning and ___wake up from his bed. He start ___ his face and go downstair to ___ his breakfast")
+x = ("1st Verb")
+y = ("2nd Verb")
 
+print(f"1st Verb: {x}, 2nd Verb: {y}")
