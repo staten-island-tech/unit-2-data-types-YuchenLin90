@@ -71,8 +71,12 @@
 
 
 #Mab Libs Project 
-z = input("It's a __day in the morning and ___wake up from his bed. He start ___ his face and go downstair to ___ his breakfast")
-x = ("1st Verb")
-y = ("2nd Verb")
 
-print(f"1st Verb: {x}, 2nd Verb: {y}")
+a = input("Verb 1=")
+b = input("Verb 2=")
+c = input("Noun 1=")
+d = input("Number 1=")
+e = input("Celebrity 1=")
+
+print(f"It was a {c} day out today. {e} wake up from his bed and start {a} his teeth. He was {d} years old now. After he finish washing his teeth, he go downstairs and start {b} his breakfast.")
+
