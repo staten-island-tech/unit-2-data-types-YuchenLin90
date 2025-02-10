@@ -72,11 +72,26 @@
 
 #Mab Libs Project 
 
-a = input("Verb 1=")
-b = input("Verb 2=")
-c = input("Noun 1=")
-d = input("Number 1=")
-e = input("Celebrity 1=")
+# a = input("Verb 1=")
+# b = input("Verb 2=")
+# c = input("Noun 1=")
+# d = input("Number 1=")
+# e = input("Celebrity 1=")
 
-print(f"It was a {c} day out today. {e} wake up from his bed and start {a} his teeth. He was {d} years old now. After he finish washing his teeth, he go downstairs and start {b} his breakfast.")
+# print(f"It was a {c} day out today. {e} wake up from his bed and start {a} his teeth. He was {d} years old now. After he finish washing his teeth, he go downstairs and start {b} his breakfast.")
 
+# day_of_week = input("what day is it? ")
+# if day_of_week == "Friday":
+#     print("correct")
+# else:
+#     print("incorrect")
+
+
+def temp(Degrees):
+    if Degrees > 68:
+        print('warm')
+    elif Degrees == 68:
+        print('perfect')
+    else:
+        print('cold')
+x = int(input("What da temp"))

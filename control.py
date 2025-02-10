@@ -19,14 +19,15 @@
 # x = int(input("What da score"))
 # grade(x)
 
-# def gamble(age, id):
+# def gamble(age):
 #     if age >= 21:
-#         if id:
-#             print("gamble away") 
-#         else:
-#             print("You need ID verificvation")
+#         print("pass")
+#     elif age < 21:
+#         print("You need ID verificvation")
 #     else:
 #         print("Your too young")
+# x = int(input("What da age"))
+# gamble(x)
 
         
 # def gamble(age, id):
@@ -38,13 +39,18 @@
 #         print("Your too young")
 
 
-# raining = False
-# if not raining == True:
-#     print("Go for walk")
+def weather(raining):
+    if raining:
+        print("Go for walk")
+    else:
+        print("Stay home")
+x = input("Weather:")
+weather(x)
+
 
 # If raining == False:
 #     print("Go for walk")
 
 
 
-print(12 % 5)
+# print(12 % 5)
