@@ -87,11 +87,40 @@
 #     print("incorrect")
 
 
-def temp(Degrees):
-    if Degrees > 68:
-        print('warm')
-    elif Degrees == 68:
-        print('perfect')
-    else:
-        print('cold')
-x = int(input("What da temp"))
+# def temp(Degrees):
+#     if Degrees > 68:
+#         print('warm')
+#     elif Degrees == 68:
+#         print('perfect')
+#     else:
+#         print('cold')
+# x = int(input("What da temp"))
+
+
+#integer, float, string, list, bollying...
+
+# def degress(temp):
+#     if temp > 68:
+#         print("warm")
+#     elif temp == 68:
+#         print("perfect")
+#     else:
+#         print("cold")
+# x = int(input("Temperature"))
+# x(degress)
+
+#Challenge 1    Let's create a function that determines if a number is odd or even
+
+#Check if x is a factor moudlo 
+#If factor == true add to list
+#loop from 2 to y for i in range (2,15)
+#if x isfactor and y isfactor then add to list 
+
+x = input("Type number here:")
+y = (12 % 5)
+y = (x)
+
+if y == True add to list
+elif y == False:
+    print("Odd")
+  
