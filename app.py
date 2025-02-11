@@ -116,11 +116,113 @@
 #loop from 2 to y for i in range (2,15)
 #if x isfactor and y isfactor then add to list 
 
-x = input("Type number here:")
-y = (12 % 5)
-y = (x)
+# num = int(input("Number="))  
+# def odd_even(num):
+#     if num % 2 == 0:
+#         print(f"{num} is Even")
+#     else:
+#         print(f"{num} is Odd")
 
-if y == True add to list
-elif y == False:
-    print("Odd")
+# odd_even(num)
+
+#Challenge 2 Let's create a function to accept a "bill" value and offer a tip of 0%, 15%, 20% or 25% depending on if the service was "bad, okay, good , or great ". 
+
+def service(rating, money):
+    if rating == "Good":
+        tip = 0.20
+    elif rating == "Great":
+        tip = 0.25
+    elif rating == "Okay":
+        tip = 0.15
+    elif rating == "Bad":
+        tip = 0
+
+    tip_amount = money * tip
+
+
+    print(f"Tip for {rating} service:{tip_amount:.2f}")
+
+rating = input("Rating:")
+money = float(input("Money:"))
+
+service(rating, money)
+
+
+
+# service(rating, money)
+
+# def service(rating, money):
+#     if rating == "Good":
+#         tip = 0.20
+#     elif rating == "Great":
+#         tip = 0.25
+#     elif rating == "Okay":
+#         tip = 0.15
+#     elif rating == "Bad":
+#         tip = 0
+#     else:
+#         return
+#     tip_amount = money * tip
+#     tip_amount= "Tip"
+
+
+# rating = input("Rating (Good, Great, Okay, Bad): ")
+# money = float(input("Bill amount: $"))
+
+# service(rating, money)
+
+
+
+# # Function to check if a number is a factor of another
+# def is_factor(x, num):
+#     return num % x == 0
+
+# # Main logic
+# def find_factors(m, y):
+#     factors_list = []
+    
+#     # Loop from 2 to 14
+#     for i in range(2, 15):
+#         # Check if both m and y are divisible by i
+#         if is_factor(i, m) and is_factor(i, y):
+#             factors_list.append(i)
+
+#     return factors_list
+
+
+
+
+
+
+
+
+
+
+# # Example usage
+# m = 99  # Replace with the number you want to check
+# y = 30  # Replace with the other number to check for common factors
+
+# # Check common factors
+# common_factors = find_factors(m, y)
+# print(f"Common factors of {m} and {y}: {common_factors}")
+
+# # Test the odd/even function
+# number_to_check = 10  # Replace with any number you'd like to check
+# print(f"{number_to_check} is {is_odd_or_even(number_to_check)}")
+
+# X = 
+# Y = input("Number=")
+# if X % Y == 0:
+#     print(f"{Y} is a factor of {X}")
+# else:
+#     print(f"{Y} is not a factor of {X}")
+
+
+# x = input("Type number here:")
+# y = (12 % 5)
+# y = (x)
+
+# if y == True add to list
+# elif y == False:
+#     print("Odd")
   

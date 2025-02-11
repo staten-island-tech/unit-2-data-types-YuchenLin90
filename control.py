@@ -39,8 +39,6 @@
 #         print("Your too young")
 
 
-#True false statement
-
 def weather(raining):
     if raining:
         print("Go for walk")
@@ -48,6 +46,9 @@ def weather(raining):
         print("Stay home")
 x = input("Weather:")
 weather(x)
+
+
+
 
 
 # If raining == False:
