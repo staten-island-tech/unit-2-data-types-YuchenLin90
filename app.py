@@ -127,25 +127,28 @@
 
 #Challenge 2 Let's create a function to accept a "bill" value and offer a tip of 0%, 15%, 20% or 25% depending on if the service was "bad, okay, good , or great ". 
 
-def service(rating, money):
-    if rating == "Good":
-        tip = 0.20
-    elif rating == "Great":
-        tip = 0.25
-    elif rating == "Okay":
-        tip = 0.15
-    elif rating == "Bad":
-        tip = 0
+# def service(rating, money):
+#     if rating == "Good":
+#         tip = 0.20
+#     elif rating == "Great":
+#         tip = 0.25
+#     elif rating == "Okay":
+#         tip = 0.15
+#     elif rating == "Bad":
+#         tip = 0
 
-    tip_amount = money * tip
+#     tip_amount = money * tip
 
 
-    print(f"Tip for {rating} service:{tip_amount:.2f}")
+#     print(f"Tip for {rating} service:{tip_amount}")
 
-rating = input("Rating:")
-money = float(input("Money:"))
+# rating = input("Rating:")
+# money = float(input("Money:"))
 
-service(rating, money)
+# service(rating, money)
+
+
+
 
 
 
@@ -226,3 +229,18 @@ service(rating, money)
 # elif y == False:
 #     print("Odd")
   
+
+
+#Challenge 3 Create a function that accepts an input and determines all factors of the number. 
+num = int(input("Number:"))
+
+def factor(num):  
+    factor_list = []  
+    for i in range(1, num + 1):
+        if num % i == 0:  
+            factor_list = factor_list + [i]
+    return factor_list  # Return the list of factors
+
+List = factor(num)
+print(f"Factors of {num}: {List}")
+
