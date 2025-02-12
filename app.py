@@ -232,15 +232,50 @@
 
 
 #Challenge 3 Create a function that accepts an input and determines all factors of the number. 
-num = int(input("Number:"))
+# num = int(input("Number:"))
 
-def factor(num):  
-    factor_list = []  
-    for i in range(1, num + 1):
-        if num % i == 0:  
-            factor_list = factor_list + [i]
-    return factor_list  # Return the list of factors
+# def factor(num):  
+#     factor_list = []  
+#     for i in range(1, num + 1):
+#         if num % i == 0:  
+#             factor_list = factor_list + [i]
+#     return factor_list 
 
-List = factor(num)
-print(f"Factors of {num}: {List}")
+# List = factor(num)
+# print(f"Factors of {num}= {List}")
 
+#Challenge 4 Create a function that accepts 2 arguments. Find the greatest common factor between those numbers. 
+X = int(input("First number="))
+Y = int(input("Second number="))
+def GCF(X, Y):
+    factor_list_X = []
+    factor_list_Y = []
+    for i in range(1, X + 1):
+        if X % i == 0:
+            factor_list_X = factor_list_X + [i]
+
+    for i in range(1, Y + 1):
+        if Y % i == 0:
+            factor_list_Y = factor_list_Y + [i]
+
+    gcf = 1  # Start with the smallest possible GCF
+    for factor in factor_list_X:
+        if factor in factor_list_Y:  # Check if the factor is common to both lists
+            if factor > gcf:  # Update gcf if the current factor is larger
+                gcf = factor
+    
+    return gcf
+
+        # Common_factor = []
+        # Common_factor = factor_list_X and factor_list_Y
+
+        
+Z = GCF(X, Y)
+        
+print(f"The GCF of {X} and {Y} is {Z}")
+
+    
+
+
+
+ 
