@@ -176,7 +176,7 @@
 
 
 
-# # Function to check if a number is a factor of another
+# Function to check if a number is a factor of another
 # def is_factor(x, num):
 #     return num % x == 0
 
@@ -244,34 +244,86 @@
 # List = factor(num)
 # print(f"Factors of {num}= {List}")
 
-#Challenge 4 Create a function that accepts 2 arguments. Find the greatest common factor between those numbers. 
-# X = int(input("First number="))
-# Y = int(input("Second number="))
-# def GCF(X, Y):
-#     factor_list_X = []
-#     factor_list_Y = []
-#     for i in range(1, X + 1):
-#         if X % i == 0:
-#             factor_list_X = factor_list_X + [i]
+# Challenge 4 Create a function that accepts 2 arguments. Find the greatest common factor between those numbers. 
+X = int(input("First number="))
+Y = int(input("Second number="))
+def GCF(X, Y):
+    factor_list_X = []
+    factor_list_Y = []
+    for i in range(1, X + 1):
+        if X % i == 0:
+            factor_list_X = factor_list_X + [i]
 
-#     for i in range(1, Y + 1):
-#         if Y % i == 0:
-#             factor_list_Y = factor_list_Y + [i]
+    for i in range(1, Y + 1):
+        if Y % i == 0:
+            factor_list_Y = factor_list_Y + [i]
 
-#     gcf = 1  
-#     for factor in factor_list_X:
-#         if factor in factor_list_Y:  
-#             if factor > gcf:  
-#                 gcf = factor
-#                 return gcf
+    gcf = 1  
+    for factor in factor_list_X:
+        if factor in factor_list_Y:  
+            if factor > gcf:  
+                gcf = factor
+                return gcf
 
         
-# Z = GCF(X, Y)
+Z = GCF(X, Y)
         
-# print(f"The GCF of {X} and {Y} is {Z}")
-
-    
+print(f"The GCF of {X} and {Y} is {Z}")
 
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# x = True 
+# y = True
+
+# def GCF():
+#     if x == True and y == True:
+#         print("true")
+
+#         # append
+
+# def vote(age, id):
+#     if age < 18 or id ==False:
+#         print("cannot vote")
+#     elif age >18 and id ==True:
+#         print("vote")
+
+
+# def skins(money, age, isAvailable):
+#     if money < 10 or age < 18 or isAvailable ==False:
+#         return("cannot buy")
+# def skins2(money, cost, isAvaliable):
+#     if isAvaliable == Ture:
+#         if money > 10 or cost ==0:
+#             print("Go off Queen")
+#         else:
+#             print("Janet Broke")
+
+# age = int(input("age"))
+# money = int(input("money"))
+# avaliable = int(input("avaliable"))
+
+# if money < 10 or age < 18 or avaliable == 0:
+#     print("Go away. ")
+# elif money > 10 or age > 18 or avaliable > 0:  
+#     print("Click to buy.")
