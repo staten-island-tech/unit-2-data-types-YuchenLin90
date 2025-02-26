@@ -245,30 +245,70 @@
 # print(f"Factors of {num}= {List}")
 
 # Challenge 4 Create a function that accepts 2 arguments. Find the greatest common factor between those numbers. 
-X = int(input("First number="))
-Y = int(input("Second number="))
-def GCF(X, Y):
+Number_1 = int(input("First number="))
+Number_2 = int(input("Second number="))
+def GCF(Number_1, Number_2):
     factor_list_X = []
     factor_list_Y = []
-    for i in range(1, X + 1):
-        if X % i == 0:
-            factor_list_X = factor_list_X + [i]
+    for i in range(1, Number_1 + 1):
+        if Number_1 % i == 0:
+            factor_list_X.append(i)
 
-    for i in range(1, Y + 1):
-        if Y % i == 0:
-            factor_list_Y = factor_list_Y + [i]
+    for i in range(1, Number_2+ 1):
+        if Number_2 % i == 0:
+            factor_list_Y.append(i)
 
     gcf = 1  
     for factor in factor_list_X:
         if factor in factor_list_Y:  
             if factor > gcf:  
                 gcf = factor
-                return gcf
+                
+    return gcf
+        
+Z = GCF(Number_1, Number_2)
+        
+print(f"The GCF of {Number_1} and {Number_2} is {Z}")
 
-        
-Z = GCF(X, Y)
-        
-print(f"The GCF of {X} and {Y} is {Z}")
+
+
+
+
+
+
+
+
+# X = int(input("First number="))
+# Y = int(input("Second number="))
+# def gcf(X, Y):
+#     Number = False
+#     gcf = 1
+
+#     for i in range(1, X + 1):
+#         if X % i == 0:
+#             for a in range(1, Y + 1):
+#                 if Y % a == 0 and a == i:
+#                     Number = True
+#                     if i > gcf:
+#                         gcf = i
+#     if not Number:
+#         return 1
+                        
+#     return gcf
+# Z = gcf(X, Y)
+# print(f"The GCF of {X} and {Y} is {Z}")
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -327,3 +367,7 @@ print(f"The GCF of {X} and {Y} is {Z}")
 #     print("Go away. ")
 # elif money > 10 or age > 18 or avaliable > 0:  
 #     print("Click to buy.")
+
+
+
+#The quiz next week is about the things above.
