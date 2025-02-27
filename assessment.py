@@ -34,22 +34,25 @@
 
 # y = input("words=")
 # x = (f"{y}")
-x = input("Words=")
-letter = 't'
-letter_2 = 's'
-word_count = 0
-word_count2 = 0
 
-for i in range(len(x)):
-    if x[i] == letter or x[i] == letter.upper():
-        word_count += 1 
-    elif x[i] == letter_2 or x[i] == letter_2.upper():
-        word_count2 += 1 
 
-if word_count > word_count2:
-    print("English")
-elif word_count < word_count2 or word_count == word_count2:
-    print("French")
+
+# x = input("Words=")
+# letter = 't'
+# letter_2 = 's'
+# word_count = 0
+# word_count2 = 0
+
+# for i in range(len(x)):
+#     if x[i] == letter or x[i] == letter.upper():
+#         word_count += 1 
+#     elif x[i] == letter_2 or x[i] == letter_2.upper():
+#         word_count2 += 1 
+
+# if word_count > word_count2:
+#     print("English")
+# elif word_count < word_count2 or word_count == word_count2:
+#     print("French")
 
         
 
@@ -67,3 +70,30 @@ elif word_count < word_count2 or word_count == word_count2:
             
 #         else:
 #print("French")
+
+
+
+# some_text = ["The quick brown fox jumped over the lazy dog."]
+# more_text = ["T", "h", "e"]
+# def lang(text):
+#     french = 0
+#     english = 0
+#     for letter in text:
+#         if letter == "s" or letter == "S":
+#             french = french +1
+#         elif letter ["t", "T"]:
+#             english = english + 1
+#     if french >= english:
+#         print("French")
+#     else:
+#         print("English")
+
+
+
+
+
+
+x = 150
+while x > 10:
+    print("buy")
+    x = x-10

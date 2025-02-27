@@ -283,7 +283,6 @@ print(f"The GCF of {Number_1} and {Number_2} is {Z}")
 # def gcf(X, Y):
 #     Number = False
 #     gcf = 1
-
 #     for i in range(1, X + 1):
 #         if X % i == 0:
 #             for a in range(1, Y + 1):
