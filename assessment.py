@@ -32,18 +32,38 @@
 #     print("French")
 
 
+# y = input("words=")
+# x = (f"{y}")
+x = input("Words=")
+letter = 't'
+letter_2 = 's'
+word_count = 0
+word_count2 = 0
 
-x = input("words:")
-def letter(T, t, S, s):
-    letter = []
-    letter = x
-    for i in letter():
-        x.split
-        if T and t:
-            letter.append(i)
-        if T and t > 5 or S and s == T and t:
-            print ("English")
+for i in range(len(x)):
+    if x[i] == letter or x[i] == letter.upper():
+        word_count += 1 
+    elif x[i] == letter_2 or x[i] == letter_2.upper():
+        word_count2 += 1 
+
+if word_count > word_count2:
+    print("English")
+elif word_count < word_count2 or word_count == word_count2:
+    print("French")
+
+        
+
+    
+
+# def letter(T, t, S, s):
+#     letter = []
+#     letter = x
+#     for i in letter():
+#         x.split
+#         if T and t:
+#             letter.append(i)
+#         if T and t > 5 or S and s == T and t:
+#             print ("English")
             
-        else:
-            print("French")
-
+#         else:
+#print("French")
