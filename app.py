@@ -247,10 +247,12 @@
 # Challenge 4 Create a function that accepts 2 arguments. Find the greatest common factor between those numbers. 
 Number_1 = int(input("First number="))
 Number_2 = int(input("Second number="))
-gcf = 1
+
 def GCF(Number_1, Number_2):
+
     factor_list_X = []
     factor_list_Y = []
+
     for i in range(1, Number_1 + 1):
         if Number_1 % i == 0:
             factor_list_X.append(i)
@@ -258,7 +260,8 @@ def GCF(Number_1, Number_2):
     for i in range(1, Number_2+ 1):
         if Number_2 % i == 0:
             factor_list_Y.append(i)
-              
+
+    gcf = 1  
     for factor in factor_list_X:
         if factor in factor_list_Y:  
             if factor > gcf:  
