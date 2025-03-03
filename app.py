@@ -245,33 +245,33 @@
 # print(f"Factors of {num}= {List}")
 
 # Challenge 4 Create a function that accepts 2 arguments. Find the greatest common factor between those numbers. 
-# Number_1 = int(input("First number="))
-# Number_2 = int(input("Second number="))
+Number_1 = int(input("First number="))
+Number_2 = int(input("Second number="))
 
-# def GCF(Number_1, Number_2):
+def GCF(Number_1, Number_2):
 
-#     factor_list_X = []
-#     factor_list_Y = []
+    factor_list_X = []
+    factor_list_Y = []
 
-#     for i in range(1, Number_1 + 1):
-#         if Number_1 % i == 0:
-#             factor_list_X.append(i)
+    for i in range(1, Number_1 + 1):
+        if Number_1 % i == 0:
+            factor_list_X.append(i)
 
-#     for i in range(1, Number_2+ 1):
-#         if Number_2 % i == 0:
-#             factor_list_Y.append(i)
+    for i in range(1, Number_2+ 1):
+        if Number_2 % i == 0:
+            factor_list_Y.append(i)
 
-#     gcf = 1  
-#     for factor in factor_list_X:
-#         if factor in factor_list_Y:  
-#             if factor > gcf:  
-#                 gcf = factor
+    gcf = 1  
+    for factor in factor_list_X:
+        if factor in factor_list_Y:  
+            if factor > gcf:  
+                gcf = factor
                 
-#     return gcf
+    return gcf
         
-# Z = GCF(Number_1, Number_2)
+Z = GCF(Number_1, Number_2)
         
-# print(f"The GCF of {Number_1} and {Number_2} is {Z}")
+print(f"The GCF of {Number_1} and {Number_2} is {Z}")
 
 
 
