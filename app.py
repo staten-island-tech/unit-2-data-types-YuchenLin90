@@ -245,33 +245,33 @@
 # print(f"Factors of {num}= {List}")
 
 # Challenge 4 Create a function that accepts 2 arguments. Find the greatest common factor between those numbers. 
-Number_1 = int(input("First number="))
-Number_2 = int(input("Second number="))
+# Number_1 = int(input("First number="))
+# Number_2 = int(input("Second number="))
 
-def GCF(Number_1, Number_2):
+# def GCF(Number_1, Number_2):
 
-    factor_list_X = []
-    factor_list_Y = []
+#     factor_list_X = []
+#     factor_list_Y = []
 
-    for i in range(1, Number_1 + 1):
-        if Number_1 % i == 0:
-            factor_list_X.append(i)
+#     for i in range(1, Number_1 + 1):
+#         if Number_1 % i == 0:
+#             factor_list_X.append(i)
 
-    for i in range(1, Number_2+ 1):
-        if Number_2 % i == 0:
-            factor_list_Y.append(i)
+#     for i in range(1, Number_2+ 1):
+#         if Number_2 % i == 0:
+#             factor_list_Y.append(i)
 
-    gcf = 1  
-    for factor in factor_list_X:
-        if factor in factor_list_Y:  
-            if factor > gcf:  
-                gcf = factor
+#     gcf = 1  
+#     for factor in factor_list_X:
+#         if factor in factor_list_Y:  
+#             if factor > gcf:  
+#                 gcf = factor
                 
-    return gcf
+#     return gcf
         
-Z = GCF(Number_1, Number_2)
+# Z = GCF(Number_1, Number_2)
         
-print(f"The GCF of {Number_1} and {Number_2} is {Z}")
+# print(f"The GCF of {Number_1} and {Number_2} is {Z}")
 
 
 
@@ -350,20 +350,29 @@ print(f"The GCF of {Number_1} and {Number_2} is {Z}")
 #     elif age >18 and id ==True:
 #         print("vote")
 
-
+# money = int(input("Money = "))
+# age = int(input("age = "))
+# isAvailable = True
 # def skins(money, age, isAvailable):
-#     if money < 10 or age < 18 or isAvailable ==False:
-#         return("cannot buy")
+#     if money < 10 or age < 18 or not isAvailable:
+#         print("cannot buy")
+#     else:
+#         print("Buy it ")
+
+
+# age = int(input("age"))
+# money = int(input("money"))
+# avaliable = int(input("avaliable"))
+
 # def skins2(money, cost, isAvaliable):
-#     if isAvaliable == Ture:
+#     if isAvaliable == True:
 #         if money > 10 or cost ==0:
 #             print("Go off Queen")
 #         else:
 #             print("Janet Broke")
 
-# age = int(input("age"))
-# money = int(input("money"))
-# avaliable = int(input("avaliable"))
+
+# skins2(money, cost, isAvaliable)
 
 # if money < 10 or age < 18 or avaliable == 0:
 #     print("Go away. ")
@@ -373,3 +382,14 @@ print(f"The GCF of {Number_1} and {Number_2} is {Z}")
 
 
 #The quiz next week is about the things above.
+
+money = int(input("Money = "))
+age = int(input("age = "))
+isAvailable = int(input("available = "))
+def skins(money, age, isAvailable):
+    if money < 10 or age < 18 or isAvailable == 0:
+        print("Go away. ")
+    elif money > 10 or age > 18 or isAvailable > 0:  
+        print("Click to buy.")
+skins(money, age, isAvailable)
+        
